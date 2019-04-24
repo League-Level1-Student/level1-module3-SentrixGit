@@ -13,6 +13,7 @@ public class NetflixQueue {
 	
 	ArrayList<Movie> movies = new ArrayList<Movie>();
 	
+	
 	public Movie getBestMovie(){
 		this.sortMoviesByRating();
 		return movies.get(0);
