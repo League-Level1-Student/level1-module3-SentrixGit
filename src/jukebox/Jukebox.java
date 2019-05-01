@@ -61,7 +61,7 @@ class Song {
 	 * 
 	 * Examples: <code> 
 	 * 		new Song("everywhere.mp3"); 	//from default package 
-	 * 		new Song("/Users/joonspoon/music/Vampire Weekend - Modern Vampires of the City/03 Step.mp3"); 
+	 * 		new Song("src/magic_box/Beer.mp3"); 
 	 * 		new	Song("http://freedownloads.last.fm/download/569264057/Get%2BGot.mp3"); 
 	 * </code>
 	 */

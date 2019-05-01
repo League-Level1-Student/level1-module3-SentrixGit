@@ -80,8 +80,12 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	public void mousePressed(MouseEvent e) {
 		MediaPalace Palace = new MediaPalace();
 		
-		Palace.playMusicOnComputer("magic_box/Rap.mp3");
-		
+		System.out.println(e.getX() + " " + e.getY());
+		if (e.getX() >= 185 && e.getY() >= 528) {
+			if (e.getX() <= 212 && e.getY() <= 564) {
+				Palace.playMusicOnComputer("src/magic_box/Beer.mp3");
+			}
+		}
 		
 	}
 
