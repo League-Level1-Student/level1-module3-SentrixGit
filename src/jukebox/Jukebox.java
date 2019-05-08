@@ -12,6 +12,7 @@ import java.net.URL;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.SwingUtilities;
 
@@ -36,6 +37,15 @@ public class Jukebox implements Runnable {
 		 * cover is clicked, stop the currently playing song, and play the one
 		 * that was selected.
 		 */
+    		
+    		JFrame Frame = new JFrame();
+    		JLabel SongImage = new JLabel();
+    		
+    		SongImage.setIcon((Icon) loadImage("src/jukebox/icon.jpg"));
+    		
+    		Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    		Frame.setTitle("Jukebox");
+    		
     }
     
     

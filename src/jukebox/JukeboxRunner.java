@@ -10,7 +10,8 @@ public class JukeboxRunner {
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Jukebox());
 		
-		Song J = new Song("src/magic_box/Beer.mp3");
+		//Song J = new Song("src/magic_box/Beer.mp3");
+		Song J = new Song("src/jukebox/ItsPink.mp3");
 		
 		J.play();
 	}

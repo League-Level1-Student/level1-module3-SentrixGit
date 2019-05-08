@@ -18,21 +18,25 @@ public class CowTimer {
 
 	public void setTime(int minutes) {
 		this.minutes = minutes;
-		System.out.println("Cow time set to " + minutes + " minutes.");
+		System.out.println("Cow time set to " + minutes + "0 seconds.");
 	}
 
 	public void start() throws InterruptedException {
+		speak("ooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsi ooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsiooomooofooooodoooooqooooo pooosdooo soommoo doo meowho isdu odjhsi");
 		/*
 		 * 2. Count down the minutes, print the current minute then sleep for the number of minutes
 		 * using Thread.sleep(int milliseconds). 
 		 */
 
+		Thread.sleep(Integer.parseInt(minutes + "0000"));
 		/*
 		 * 3. When the timer is finished, use the playSound method to play a moo sound.
 		 * You can use the .wav file in the default package, or you can download one
 		 * from freesound.org, then drag it intothe default package.
 		 */
-
+		System.out.println("Done");
+		//playSound("src/cow_timer/moo.wav");
+		speak("ooomooofooooodoooooqooooo");
 	}
 
 	private void playSound(String fileName) {
